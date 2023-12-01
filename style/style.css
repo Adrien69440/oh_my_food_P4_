@@ -1,5 +1,100 @@
-body {
-  background-color: black;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  line-height: 1.3;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.header {
+  background: white;
+  z-index: 2;
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5rem;
+  height: 6rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.header .backLink {
+  margin-left: 2rem;
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.header .header-logo {
+  margin: auto;
+  height: 3rem;
+}
+.location-item{
+  background: #eaeaea;
+  font-weight: 500;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.home-section{
+  padding: 6rem 2rem;
+}
+main {
+  position: relative;
+}
+
+.Button {
+  color: white;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  background: #ff79da;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  width: min-content;
+  white-space: nowrap;
+  margin: 4rem auto;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  
+}
+.Button:hover {
+  filter: brightness(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.hero-item {
+  background: whitesmoke;
+  padding: 3rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-item .hero-title {
+  font-size: 2.6rem;
+  padding: 2rem;
+}
+.hero-item .hero-text {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
