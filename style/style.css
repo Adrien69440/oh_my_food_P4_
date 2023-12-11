@@ -233,10 +233,7 @@ ul{
   border-radius: 4rem ;
   background-color: white;
   margin: 2rem 0rem 2rem 0rem ;
-  /* overflow: hidden; 
-  text-overflow: ellipsis;
-  width: 100%;*/
-
+  
 }
 .menu-article-card{
   display: flex;
@@ -247,18 +244,18 @@ ul{
  
   padding: 0rem;
     max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
     flex: 1;
     display:flex;
     justify-content: space-between;
     gap: 0rem;
     flex-direction: column;
-}
-/* .menu-title1 .menu-info .menu-price{ 
+
+} 
+.menu-info , .menu-restaurants-title{ 
   overflow: hidden;
   text-overflow: ellipsis;
-}*/
+  white-space: nowrap;
+}
 /* fin menu */
 /* footer */
 footer {
