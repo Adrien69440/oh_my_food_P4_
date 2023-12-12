@@ -284,15 +284,27 @@ transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s eas
 }
         
 .menu-restaurants-card .menu-select {
-          font-size: 3rem;
-          color: white;
-          transform: rotate(360deg);
-          transition: 0.4s ease-in-out;
+font-size: 3rem;
+color: white;
+transform: rotate(360deg);
+transition: 0.4s ease-in-out;
 }
-        .menu-restaurants-card:hover .menu-select {
-          opacity: 100%;
-          width: 7rem;
-        }*/
+.menu-restaurants-card:hover .menu-select {
+ opacity: 100%;
+ width: 7rem;
+}
+.menu-restaurants-card:hover .menu-select span{ 
+transform: rotate(360deg); 
+transition: transform 0.8s ease; 
+color: white
+}    
+.menu-price {
+  transition: margin-right 0.4s ease-in-out;
+}
+.menu-restaurants-card:hover .menu-price {
+  margin-right: 100px; 
+}
+
       /* fin effet check */
   /* .menu-article-card{ 
   display: flex;
@@ -310,23 +322,16 @@ transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s eas
   gap: 0rem;
   flex-direction: column;
 
-} */
+} 
 .menu-info , .menu-restaurants-title{ 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
+}*/
 
-.menu-check{
-  top: 0%;
-  right: 0;
-  transform: translateX(100%) rotate(0deg);
-  opacity: 0;
-  margin-right: 20px;
-  transition: transform 0.4s ease-in-out, opacity 0s ease-in-out;
-}
 
-.menu-restaurants-card:hover .menu-check {
+
+/* .menu-restaurants-card:hover .menu-check { 
   transform: translateX(0) ;
   opacity: 1;
   background-color: #99e2d0;
@@ -340,19 +345,10 @@ transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s eas
   align-items: center;
   justify-content: center;
   color: white;
-}
- .menu-restaurants-card:hover .menu-check span{ 
-  transform: rotate(360deg); 
-  transition: transform 0.8s ease; 
-  color: white
-}
+}*/
 
-.menu-price {
-  transition: margin-right 0.4s ease-in-out;
-}
-.menu-restaurants-card:hover .menu-price {
-  margin-right: 100px; 
-}
+
+
 /* fin carte menu */
 /* nouveau code */
 /* .menu-restaurants-card{ 
