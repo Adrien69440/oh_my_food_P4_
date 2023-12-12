@@ -226,36 +226,203 @@ ul{
   border-bottom: 3px #008766 solid;
   width: 40px;
 }
-.menu-restaurants-card{
-  padding: 2rem;
+ /* debut carte menu */
+.menu-restaurants-card{ 
+  background: white;
+  height: 7rem;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  animation: slideup 1s forwards;
+  opacity: 1;
+  margin:2rem 0 2rem 2rem ;
+}
+.menu-restaurants-card .menu-article-card{
+  padding: 1.5rem;
+  max-width: 100%;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.menu-restaurants-card .menu-article-card .menu-text{
   display: flex;
   flex-direction: column;
-  border-radius: 4rem ;
-  background-color: white;
-  margin: 2rem 0rem 2rem 0rem ;
-  
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  }
+  .menu-restaurants-card .menu-article-card .menu-restaurants-title .menu-text{
+    font-size: 1.6rem;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu-restaurants-card .menu-article-card .menu-detail{
+    font-weight: 200;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+    .menu-restaurants-card .menu-price{
+      font-weight: 600;
+      display: flex;
+      align-items: flex-end;
+      }
+      /* effet check */
+.menu-restaurants-card .menu-select {
+background: #99e2d0;
+cursor: pointer;
+height: auto;
+width: 0;
+opacity: 0;
+border-radius: 0 15px 15px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
-.menu-article-card{
+        
+.menu-restaurants-card .menu-select {
+          font-size: 3rem;
+          color: white;
+          transform: rotate(360deg);
+          transition: 0.4s ease-in-out;
+}
+        .menu-restaurants-card:hover .menu-select {
+          opacity: 100%;
+          width: 7rem;
+        }*/
+      /* fin effet check */
+  /* .menu-article-card{ 
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
-.menu-restaurants-info{
+}*/
+
+/* .menu-restaurants-info{ 
  
   padding: 0rem;
-    max-width: 100%;
-    flex: 1;
-    display:flex;
-    justify-content: space-between;
-    gap: 0rem;
-    flex-direction: column;
+  max-width: 100%;
+  flex: 1;
+  display:flex;
+  justify-content: space-between;
+  gap: 0rem;
+  flex-direction: column;
 
-} 
+} */
 .menu-info , .menu-restaurants-title{ 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.menu-check{
+  top: 0%;
+  right: 0;
+  transform: translateX(100%) rotate(0deg);
+  opacity: 0;
+  margin-right: 20px;
+  transition: transform 0.4s ease-in-out, opacity 0s ease-in-out;
+}
+
+.menu-restaurants-card:hover .menu-check {
+  transform: translateX(0) ;
+  opacity: 1;
+  background-color: #99e2d0;
+  width: 7rem;
+  height: 87px;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+ .menu-restaurants-card:hover .menu-check span{ 
+  transform: rotate(360deg); 
+  transition: transform 0.8s ease; 
+  color: white
+}
+
+.menu-price {
+  transition: margin-right 0.4s ease-in-out;
+}
+.menu-restaurants-card:hover .menu-price {
+  margin-right: 100px; 
+}
+/* fin carte menu */
+/* nouveau code */
+/* .menu-restaurants-card{ 
+  background: white;
+  height: 7rem;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  animation: slideup 1s forwards;
+  opacity: 1;
+}
+.menu-restaurants-card .menu-article-card{
+  padding: 1.5rem;
+  max-width: 100%;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.menu-restaurants-card .menu-article-card .menu-text{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow: hidden;
+white-space: nowrap;
+}
+.menu-restaurants-card .menu-article-card .menu-restaurants-title .menu-text{
+font-size: 1.6rem;
+font-weight: 400;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.menu-restaurants-card .menu-article-card .menu-detail{
+font-weight: 200;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.menu-restaurants-card .menu-price{
+font-weight: 600;
+display: flex;
+align-items: flex-end;
+}
+
+.menu-restaurants-card .menu-select {
+background: #99e2d0;
+cursor: pointer;
+height: auto;
+width: 0;
+opacity: 0;
+border-radius: 0 15px 15px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.menu-restaurants-card .menu-select {
+  font-size: 3rem;
+  color: white;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+.menu-restaurants-card:hover .menu-select {
+  opacity: 100%;
+  width: 7rem;
+}*/
+
+/* fin nouveau code */
 /* fin menu */
 /* footer */
 footer {
