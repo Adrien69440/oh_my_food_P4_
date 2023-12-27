@@ -1,53 +1,55 @@
- /* *************** */
- @keyframes cat{
-  0% {
-      transform: translateX(-9999px);
+
+ /* ******************** */
+ .contenu{
+  animation: cache-main 6s;
+}
+@keyframes cache-main {
+  0%{
+      opacity: 0;
   }
-  100% {
-      transform: translateX(0);
+  50%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
   }
 }
-.cat {
-  animation: cat 0ms  both;
+/* **************************************************** */
+.contenu-loader{
+  animation: cache-loader-main 3s;
+  animation-fill-mode: forwards;  
 }
-.loader-wrapper { 
+
+@keyframes cache-loader-main{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  99%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+ 
+}
+ /* @keyframes fade-out {  
+  to {
+  opacity: 0;
+  display: none;
+  }
+} */
+.loader-wrapper {
   position: relative;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   margin: auto;
-  animation: loader-wrapper 1s 1s linear forwards;
 }
-@keyframes loader-wrapper {
-  0% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-} 
- @keyframes show-content { 
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-    transform: scaleY(1);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.content{
-  animation: show-content 1s 3s linear forwards;
-}
+
 .loader-wrapper .packman::before {
   content: '';
   position: absolute;
@@ -137,17 +139,19 @@
   height: 100%;
   width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 100; 
   align-items: center;
-  animation: dot-stage1 ;
+  animation: dot-stage1;
 }
 @keyframes dot-stage1 {
   0% {
     transform: translate(0, 0);
+  
   }
 
   100% {
     transform: translate(-24px, 0);
+    
   }
 }
 
@@ -158,26 +162,9 @@
 
   5%, 100% {
     transform: scale(0);
+  
   }
-} 
- /* ******************** 
- body:not(.loaded) { 
-  overflow: hidden;
 }
-
-.loaded {
-  overflow: visible;
-  animation: fadeInContent 5s ease-out 1s forwards;
-}
-
-@keyframes fadeInContent {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} 
 /* **************************************************** */
 * {
   margin: 0;
