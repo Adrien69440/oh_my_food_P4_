@@ -187,10 +187,6 @@ a {
   text-decoration: inherit;
 }
 
- #icon{ 
-  display: flex;
-}
-
 .header {
   background: white;
   z-index: 2;
@@ -214,17 +210,38 @@ a {
   margin: auto;
   height: 3rem;
 }
+/* *****placeholder*************** */
+#icon{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .location-item{
   background: #eaeaea;
   font-weight: 500;
-  padding: 2rem;
+  padding:2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+ 
+}
+.custom-input{
+  border: none; 
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px; 
+  font-weight: 500;
+  outline: none; 
+  background-color:#eaeaea ;
+   margin-right: -80px; 
+}
+.custom-input::placeholder{
+  font-size: 16px;
+  font-weight: 700;
 }
 .home-section{
-  padding: 6rem 2rem;
+  padding: 1rem 2rem;
 }
 main {
   position: relative;
@@ -272,12 +289,6 @@ main {
 }
 
 /* Menu fonctionnement */
-.home-section{
-  padding: 6rem 2rem;
-}
-ul{
-  list-style: none;
-}
 
 .list-element{
   display: grid;
@@ -323,8 +334,10 @@ ul{
   color:#7E7E7E;
 }
 
-.fonctionnement-icone:hover{
+.list-full:hover{
   color: #9356DC;
+  box-shadow: 0 0 10px rgba(147, 86, 220, 0.5); 
+  transition: color 0.3s, box-shadow 0.3s; 
 }
 /* section cards restaurants */
 .section-title{
