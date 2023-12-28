@@ -239,6 +239,7 @@ a {
 .custom-input::placeholder{
   font-size: 16px;
   font-weight: 700;
+  color: black;
 }
 .home-section{
   padding: 1rem 2rem;
@@ -416,7 +417,7 @@ main {
 }
 
 .container {
-  display: bloc;
+  display: block;
   position: relative;
   cursor: pointer;
   font-size: 16px;
@@ -427,8 +428,8 @@ main {
 .checkmark {
   top: 0;
   left: 0;
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
   transition: 100ms;
   animation: dislike_effec 400ms ease;
 }
@@ -442,7 +443,7 @@ main {
   animation: like_effect 400ms ease;
 }
 
-  .container:hover {  
+.container:hover {  
   transform: scale(1.1);
 }
 @keyframes like_effect {
