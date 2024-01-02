@@ -1,5 +1,5 @@
 
- /* ******************** */
+/* ******************** */
  .contenu{
   animation: cache-main 6s;
 }
@@ -268,7 +268,7 @@ main {
 .hero-btn:hover {
   filter: brightness(1.1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  transform: scale(1.15);
+  /* transform: scale(1.15); */
 }
 
 .hero-item {
@@ -340,6 +340,7 @@ main {
   box-shadow: 0 0 10px rgba(147, 86, 220, 0.5); 
   transition: color 0.3s, box-shadow 0.3s; 
 }
+.list-full:hover > span{color:#9356DC}
 /* section cards restaurants */
 .section-title{
   margin-bottom: 2rem;
@@ -433,7 +434,12 @@ main {
   transition: 100ms;
   animation: dislike_effec 400ms ease;
 }
-
+.color-one{
+  stop-color:#ff79da
+}
+.color-two{
+  stop-color: #9356dc
+}
 .container input:checked ~ .checkmark path {
   fill:url(#myGradient);
   stroke-width: 0;
@@ -517,15 +523,15 @@ main {
 }
 
 .menu-starter-delay {
-  animation-delay: 4s; 
+  animation-delay: 0.5s; 
 }
 
 .menu-dishes-delay {
-  animation-delay: 4.5s; 
+  animation-delay: 1s; 
 }
 
 .menu-desserts-delay {
-  animation-delay: 5s; 
+  animation-delay: 1.5s; 
 }
 /* ************************************************ */
 .menu-restaurants-card{ 
@@ -661,11 +667,23 @@ footer .footer-icon-hand{
 @media (min-width:650px){
    .list-element{ 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 2rem;
     padding: 0;
     width: 100%;
+    /* padding: 0 180px 0 180px; */
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+
+  }
+  .essai{
+    display: flex;
+    
+    gap:5px
   }
 }
 
@@ -676,8 +694,7 @@ footer .footer-icon-hand{
 .list-element{ 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));;
-  grid-template-rows: auto;
-  
+  grid-template-rows: auto;  
 }
 } 
   
