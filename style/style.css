@@ -393,16 +393,17 @@ main {
 .section-menu{
   background-color: #F6F6F6;
   border-radius: 4rem 4rem 0 0 ;
-  margin-top: -11rem;
+  margin-top: -14rem;
   position: relative;
   width: 100%;
   padding: 2rem;
-
+  
 }
 .menu-restaurants-image{
   object-fit:cover;
   width:100%;
   min-height:30em;
+  margin-top: -234px;
 }
 #position-arrow{
   margin-left: 17px;
@@ -534,6 +535,16 @@ main {
   animation-delay: 1.5s; 
 }
 /* ************************************************ */
+.list-element-restaurant{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 2rem;
+  padding: 0;
+  width: 100%;
+}
 .menu-restaurants-card{ 
   background: white;
   height: 7rem;
@@ -660,12 +671,21 @@ footer .footer-icon-hand{
   font-size: 1rem;
 }
 @media (min-width:600px){
-   .menu-full{ 
+   /* .menu-full{  
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  }
+  }*/
 }
 @media (min-width:650px){
    .list-element{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 0;
+    width: 100%;
+    /* padding: 0 180px 0 180px; */
+  }
+  .list-element-restaurant{ 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -688,13 +708,39 @@ footer .footer-icon-hand{
 }
 
 @media (min-width:1000px){
- .menu-full{ 
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+ /* .menu-full{  */
+  /* grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); 
+}*/
+.section-menu{
+  background-color: #F6F6F6;
+  border-radius: 4rem 4rem 0 0 ;
+  margin-top: -16rem;
+  position: relative;
+  width: 70%;
+  padding: 2rem;
+  margin: -16rem auto 0 auto;
+
 }
 .list-element{ 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));;
   grid-template-rows: auto;  
+  margin-left: 150px; 
+  margin-right: 150px;
+}
+.list-element-restaurant{ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));;
+  grid-template-rows: auto;  
+}
+.list-element h3{
+  font-size: 16px;
+}
+.menu-restaurants-image{
+  object-fit:cover;
+  width:100%;
+  min-height:30em;
+  margin-top: -434px;
 }
 } 
   
