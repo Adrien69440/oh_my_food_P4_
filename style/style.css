@@ -501,7 +501,6 @@ main {
 .menu-listing{
   display: flex;
   flex-direction: column;
-  
 }
 /* code delay pour l'affichage des menus */
 
@@ -682,6 +681,11 @@ footer .footer-icon-hand{
     display: flex;
     justify-content: center;
     gap: 30px;
+  }
+  .menu-listing{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 120px 0px 120px;
   }
 }
 @media (min-width:1000px){
