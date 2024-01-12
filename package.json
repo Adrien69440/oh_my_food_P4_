@@ -1,0 +1,13 @@
+{
+  "name": "oh_my_food_p4_",
+  "version": "1.0.0",
+  "description": "Projet4_ho_my_food\r éditeur de code VS code\r # oh_my_food_P4_ # oh_my_food_P4_",
+  "main": "index.js",
+  "scripts": {
+   "sass": " sass ./sass/main.scss ./styles/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
