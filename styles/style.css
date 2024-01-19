@@ -99,7 +99,7 @@ display: none;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: linear-gradient 162deg, #ff79da 0%, #9356dc 100%;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
 }
 .dots .dot:nth-child(1) {
   left: 90px;
