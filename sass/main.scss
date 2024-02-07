@@ -258,7 +258,7 @@ $input-place-holder:"roboto";
   
   /* *****placeholder*************** */
   
-  #icon {
+  .icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -506,7 +506,7 @@ $input-place-holder:"roboto";
   .container {
 	input:checked ~ .checkmark {
 	  path {
-		fill: url(#myGradient);
+		fill: url(.myGradient);
 		stroke-width: 0;
 	  }
   
