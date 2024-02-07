@@ -469,7 +469,7 @@ $input-place-holder:"roboto";
   
   /* ****************coeur**************************** */
   
-  .container {
+  .container{
 	input {
 	  position: absolute;
 	  opacity: 0;
@@ -486,13 +486,13 @@ $input-place-holder:"roboto";
 	transition: 100ms;
   }
   
-  .checkmark {
+  .checkmark  {
 	top: 0;
 	left: 0;
 	height: 1.5em;
 	width: 1.5em;
 	transition: 100ms;
-	animation: dislike_effec 400ms ease;
+	animation: dislike_effect 400ms ease;
   }
   
   .color-one {
@@ -506,7 +506,7 @@ $input-place-holder:"roboto";
   .container {
 	input:checked ~ .checkmark {
 	  path {
-		fill: url(.myGradient);
+		fill: url(#myGradient);
 		stroke-width: 0;
 	  }
   
@@ -545,7 +545,7 @@ $input-place-holder:"roboto";
 	  transform: scale(1);
 	}
   }
-  
+ 
   /* ************************************************** */
   
   .menu-title {
