@@ -1,5 +1,9 @@
-
-// couleur des backgrounds palette
+* {
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  // couleur des backgrounds palette
 $background-linear-gradient-color_1:#ff79da;
 $background-linear-gradient-color_2:#9356dc;
 $main-restaurant-card-color_3:white;
@@ -36,6 +40,8 @@ $fw-700:700;
 
 $title-font-shrikhand:"shrikand";
 $input-place-holder:"roboto";
+
+
 .contenu {
 	animation: cache-main 6s;
   }
@@ -78,13 +84,6 @@ $input-place-holder:"roboto";
 	  opacity: 0;
 	}
   }
-  
-   /* @keyframes fade-out {  
-	to {
-	opacity: 0;
-	display: none;
-	}
-  } */
   
   .loader-wrapper {
 	position: relative;
@@ -214,11 +213,7 @@ $input-place-holder:"roboto";
   
   /* **************************************************** */
   
-  * {
-	margin: 0;
-	box-sizing: border-box;
-  }
-  
+ 
   html {
 	font-size: 62.5%;
 	line-height: 1.3;
