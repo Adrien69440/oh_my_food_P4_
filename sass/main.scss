@@ -227,7 +227,7 @@ $input-place-holder:"roboto";
   
   a {
 	color: inherit;
-	text-decoration: inherit;
+	text-decoration: none;
   }
   
   .header {
@@ -345,7 +345,7 @@ $input-place-holder:"roboto";
   
   /* Menu fonctionnement */
   
-  .list-element {
+  .list-element{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
@@ -366,8 +366,9 @@ $input-place-holder:"roboto";
 	box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
 	border-radius: 2rem;
 	position: relative;
+	text-decoration: none;
   
-	.list-number {
+	.list-number{
 	  display: flex;
 	  align-items: center;
 	  justify-content: center;
