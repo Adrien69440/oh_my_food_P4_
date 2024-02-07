@@ -386,7 +386,7 @@ main {
 }
 
 /* ****************coeur**************************** */
-.container {
+.container span {
   display: block;
   position: relative;
   cursor: pointer;
