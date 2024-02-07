@@ -401,6 +401,16 @@ main {
   height: 0;
   width: 0;
 }
+.container:hover {
+  transform: scale(1.1);
+}
+.container input:checked ~ .checkmark {
+  animation: like_effect 400ms ease;
+}
+.container input:checked ~ .checkmark path {
+  fill: url(#myGradient);
+  stroke-width: 0;
+}
 
 .checkmark {
   top: 0;
@@ -417,17 +427,6 @@ main {
 
 .color-two {
   stop-color: #9356dc;
-}
-
-.container input:checked ~ .checkmark {
-  animation: like_effect 400ms ease;
-}
-.container input:checked ~ .checkmark path {
-  fill: url(#myGradient);
-  stroke-width: 0;
-}
-.container:hover {
-  transform: scale(1.1);
 }
 
 @keyframes like_effect {

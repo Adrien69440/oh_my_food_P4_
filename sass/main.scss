@@ -470,7 +470,91 @@ $input-place-holder:"roboto";
   
   /* ****************coeur**************************** */
   
-  .container{
+//   .container{
+// 	display: block;
+// 	position: relative;
+// 	cursor: pointer;
+// 	font-size: 16px;
+// 	user-select: none;
+// 	transition: 100ms;
+	
+// 	input {
+// 		position: absolute;
+// 		opacity: 0;
+// 		cursor: pointer;
+// 		height: 0;
+// 		width: 0;
+// 	  }
+// }
+  
+//   .checkmark  {
+// 	top: 0;
+// 	left: 0;
+// 	height: 1.5em;
+// 	width: 1.5em;
+// 	transition: 100ms;
+// 	animation: dislike_effect 400ms ease;
+//   }
+  
+//   .color-one {
+// 	stop-color: $background-linear-gradient-color_1;
+//   }
+  
+//   .color-two {
+// 	stop-color: $background-linear-gradient-color_2;
+//   }
+  
+//   .container {
+// 	input:checked ~ .checkmark {
+// 	  path {
+// 		fill: url(#myGradient);
+// 		stroke-width: 0;
+// 	  }
+  
+// 	  animation: like_effect 400ms ease;
+// 	}
+  
+// 	&:hover {
+// 	  transform: scale(1.1);
+// 	}
+//   }
+  
+//   @keyframes like_effect {
+// 	0% {
+// 	  transform: scale(0);
+// 	}
+  
+// 	50% {
+// 	  transform: scale(1.2);
+// 	}
+  
+// 	100% {
+// 	  transform: scale(1);
+// 	}
+//   }
+  
+//   @keyframes dislike_effect {
+// 	0% {
+// 	  transform: scale(0);
+// 	}
+  
+// 	50% {
+// 	  transform: scale(1.2);
+// 	}
+  
+// 	100% {
+// 	  transform: scale(1);
+// 	}
+//   }
+ 
+.container {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-size: 16px;
+	user-select: none;
+	transition: 100ms;
+  
 	input {
 	  position: absolute;
 	  opacity: 0;
@@ -479,15 +563,21 @@ $input-place-holder:"roboto";
 	  width: 0;
 	}
   
-	display: block;
-	position: relative;
-	cursor: pointer;
-	font-size: 16px;
-	user-select: none;
-	transition: 100ms;
+	&:hover {
+	  transform: scale(1.1);
+	}
+  
+	input:checked ~ .checkmark {
+	  path {
+		fill: url(#myGradient);
+		stroke-width: 0;
+	  }
+  
+	  animation: like_effect 400ms ease;
+	}
   }
   
-  .checkmark  {
+  .checkmark {
 	top: 0;
 	left: 0;
 	height: 1.5em;
@@ -502,21 +592,6 @@ $input-place-holder:"roboto";
   
   .color-two {
 	stop-color: $background-linear-gradient-color_2;
-  }
-  
-  .container {
-	input:checked ~ .checkmark {
-	  path {
-		fill: url(#myGradient);
-		stroke-width: 0;
-	  }
-  
-	  animation: like_effect 400ms ease;
-	}
-  
-	&:hover {
-	  transform: scale(1.1);
-	}
   }
   
   @keyframes like_effect {
@@ -546,7 +621,7 @@ $input-place-holder:"roboto";
 	  transform: scale(1);
 	}
   }
- 
+  
   /* ************************************************** */
   
   .menu-title {
