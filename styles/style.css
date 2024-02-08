@@ -386,71 +386,30 @@ main {
 }
 
 /* ****************coeur**************************** */
-.container span {
-  display: block;
+.container {
+  height: 100%;
   position: relative;
-  cursor: pointer;
-  font-size: 16px;
-  user-select: none;
-  transition: 100ms;
 }
-.container input {
+
+i {
   position: absolute;
+  top: 10%;
+  right: 50%;
+}
+
+.fa-solid {
   opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.container:hover {
-  transform: scale(1.1);
-}
-.container input:checked ~ .checkmark {
-  animation: like_effect 400ms ease;
-}
-.container input:checked ~ .checkmark path {
-  fill: url(#myGradient);
-  stroke-width: 0;
 }
 
-.checkmark {
-  top: 0;
-  left: 0;
-  height: 1.5em;
-  width: 1.5em;
-  transition: 100ms;
-  animation: dislike_effect 400ms ease;
+.fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #ff79da, #9356dc);
 }
 
-.color-one {
-  stop-color: #ff79da;
-}
-
-.color-two {
-  stop-color: #9356dc;
-}
-
-@keyframes like_effect {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes dislike_effect {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /* ************************************************** */
 .menu-title {
   display: flex;
