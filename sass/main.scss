@@ -470,90 +470,7 @@ $input-place-holder:"roboto";
   
   /* ****************coeur**************************** */
   
-//   .container{
-// 	display: block;
-// 	position: relative;
-// 	cursor: pointer;
-// 	font-size: 16px;
-// 	user-select: none;
-// 	transition: 100ms;
-	
-// 	input {
-// 		position: absolute;
-// 		opacity: 0;
-// 		cursor: pointer;
-// 		height: 0;
-// 		width: 0;
-// 	  }
-// }
-  
-//   .checkmark  {
-// 	top: 0;
-// 	left: 0;
-// 	height: 1.5em;
-// 	width: 1.5em;
-// 	transition: 100ms;
-// 	animation: dislike_effect 400ms ease;
-//   }
-  
-//   .color-one {
-// 	stop-color: $background-linear-gradient-color_1;
-//   }
-  
-//   .color-two {
-// 	stop-color: $background-linear-gradient-color_2;
-//   }
-  
-//   .container {
-// 	input:checked ~ .checkmark {
-// 	  path {
-// 		fill: url(#myGradient);
-// 		stroke-width: 0;
-// 	  }
-  
-// 	  animation: like_effect 400ms ease;
-// 	}
-  
-// 	&:hover {
-// 	  transform: scale(1.1);
-// 	}
-//   }
-  
-//   @keyframes like_effect {
-// 	0% {
-// 	  transform: scale(0);
-// 	}
-  
-// 	50% {
-// 	  transform: scale(1.2);
-// 	}
-  
-// 	100% {
-// 	  transform: scale(1);
-// 	}
-//   }
-  
-//   @keyframes dislike_effect {
-// 	0% {
-// 	  transform: scale(0);
-// 	}
-  
-// 	50% {
-// 	  transform: scale(1.2);
-// 	}
-  
-// 	100% {
-// 	  transform: scale(1);
-// 	}
-//   }
- 
 .container {
-	// display: block;
-	// position: relative;
-	// cursor: pointer;
-	// font-size: 16px;
-	// user-select: none;
-	// transition: 100ms;
 	height: 100%;
  	position: relative;
 }
@@ -562,84 +479,21 @@ i {
 	top: 10%;
 	right: 50%;
   }
+  
   .fa-solid {
-	opacity:0;
+	opacity: 0;
+  
+	&:hover {
+	  opacity: 1;
+	  color: transparent;
+	  background-clip: text;
+	  -webkit-background-clip: text;
+	  transition: all 0.4s ease-in-out;
+	  background-image: linear-gradient(to bottom,$background-linear-gradient-color_1 , $background-linear-gradient-color_2);
+	}
   }
-  .fa-solid:hover{
-	opacity:1;
-	color:transparent; 
-	background-clip:text;
-	-webkit-background-clip:text;
-	transition: all 0.4s ease-in-out;
-	background-image: linear-gradient(to right,$background-linear-gradient-color_1 , $background-linear-gradient-color_2);
-  }
-  // 	input {
-// 	  position: absolute;
-// 	  opacity: 0;
-// 	  cursor: pointer;
-// 	  height: 0;
-// 	  width: 0;
-// 	}
   
-// 	&:hover {
-// 	  transform: scale(1.1);
-// 	}
-  
-// 	input:checked ~ .checkmark {
-// 	  path {
-// 		fill: url(#myGradient);
-// 		stroke-width: 0;
-// 	  }
-  
-// 	  animation: like_effect 400ms ease;
-// 	}
-//   }
-  
-//   .checkmark {
-// 	top: 0;
-// 	left: 0;
-// 	height: 1.5em;
-// 	width: 1.5em;
-// 	transition: 100ms;
-// 	animation: dislike_effect 400ms ease;
-//   }
-  
-//   .color-one {
-// 	stop-color: $background-linear-gradient-color_1;
-//   }
-  
-//   .color-two {
-// 	stop-color: $background-linear-gradient-color_2;
-//   }
-  
-//   @keyframes like_effect {
-// 	0% {
-// 	  transform: scale(0);
-// 	}
-  
-// 	50% {
-// 	  transform: scale(1.2);
-// 	}
-  
-// 	100% {
-// 	  transform: scale(1);
-// 	}
-//   }
-  
-//   @keyframes dislike_effect {
-// 	0% {
-// 	  transform: scale(0);
-// 	}
-  
-// 	50% {
-// 	  transform: scale(1.2);
-// 	}
-  
-// 	100% {
-// 	  transform: scale(1);
-// 	}
-//   }
-  
+
   /* ************************************************** */
   
   .menu-title {
