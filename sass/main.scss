@@ -629,8 +629,6 @@ i {
 	  display: flex;
 	  align-items: center;
 	  justify-content: center;
-  
-	  /* transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;  */
 	}
   
 	&:hover .menu-select {
@@ -736,10 +734,7 @@ i {
   }
   
   @media (min-width: 1000px) {
-	/* .menu-full{  */
-	/* grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); 
-  }*/
-  
+	
 	.section-menu {
 	  border-radius: 4rem 4rem 0 0;
 	  position: relative;
