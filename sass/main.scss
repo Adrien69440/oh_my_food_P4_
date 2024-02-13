@@ -474,13 +474,14 @@ $input-place-holder:"roboto";
 	height: 100%;
  	position: relative;
 }
-i {
+.i__position {
 	position:absolute;
 	top: 10%;
 	right: 50%;
+
   }
   
-  .fa-solid {
+  .fa-solid__opacity {
 	opacity: 0;
   
 	&:hover {
@@ -703,7 +704,7 @@ i {
 	  gap: 0.5rem;
 	}
   
-	.footer-icon {
+	.footer-icon{
 	  font-size: 1.5rem;
 	}
   

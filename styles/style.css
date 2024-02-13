@@ -391,16 +391,16 @@ main {
   position: relative;
 }
 
-i {
+.i__position {
   position: absolute;
   top: 10%;
   right: 50%;
 }
 
-.fa-solid {
+.fa-solid__opacity {
   opacity: 0;
 }
-.fa-solid:hover {
+.fa-solid__opacity:hover {
   opacity: 1;
   color: transparent;
   background-clip: text;
@@ -532,7 +532,6 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;  */
 }
 .menu-restaurants-card:hover .menu-select {
   opacity: 100%;
@@ -623,9 +622,6 @@ footer .footer-icon-hand {
   }
 }
 @media (min-width: 1000px) {
-  /* .menu-full{  */
-  /* grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); 
-   }*/
   .section-menu {
     border-radius: 4rem 4rem 0 0;
     position: relative;
