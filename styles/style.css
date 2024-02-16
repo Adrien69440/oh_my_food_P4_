@@ -386,6 +386,16 @@ main {
 }
 
 /* ****************coeur**************************** */
+.fa-regular.fa-heart {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.fa-solid.fa-heart {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .container {
   height: 100%;
   position: relative;
@@ -619,7 +629,7 @@ footer .footer-icon-hand {
   .menu-title {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
   }
   .menu-listing {
     display: flex;
